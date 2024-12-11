@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="mother">
+        <div class="Header">
+            <img class="Logo" src="kaJsdaj-removebg-preview.png"/>
+            <input class="search" type="search" value="Sign Up and get 50% off on your first order" ><span class="magnify">  <i class="fa-solid fa-magnifying-glass"></i></span> 
+            
+            <a  id="openModalBtn" href="about_in.html"><i class="fa-solid fa-circle-user"><label>Login</label></i></a>
+        </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModalBtn" class="close">&times;</span>
+            <h1 >Login</h1>
+            <form action="index.html" method="post">
+                <div class="form-group">
+                    <label for="text">Username</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="loginBtn">Login</button>
+                </div>
+        
+                <div class="link">
+                    <p class="register"><a href="about_out.html">Register</a></p>
+                </div>
+            </div>
+        </div>
+            </form>
+        </div>
+    </div>
+    <div class="Menu">
+        <img class="chld" src="childrens book.jpg">
+        <h2 class="title">ABOUT US</h2>
+        
+        <a href="slideKid.html"><i class="fa-solid fa-house"><label>Home</label></i></a>
+    
+        <a href="about_us.html"><i class="fa-solid fa-address-card"> <label>About</label></i></a>
+
+        <a href="aboutMe.html"><i class="fa-solid fa-image-portrait"><label>Projects</label></i></a>
+        
+    <div class="dropdown">
+        <a class="Link" href="Kids_Section_3d.html">
+            <i class="fa-solid fa-shop"><Label>Shop Now!</Label></i>
+        </a>
+       
+    </div>
+    <div class="dropdown">
+    <div class="dropdown_menu">
+       
+        </div>
+        </div>
+    </div>
+<div class="container">
+    <h1 >About Me!</h1>
+    
+    <div class="features">
+        <p>
+            Hi i'm a  student at ISU-Jones  <span class="highlight">with a strong interest in front-end development.</span> I'm currently learning technologies like [HTML and CSS] and enjoy creating visually engaging web experiences.
+            <br> <br>
+            In the near future, I plan to expand my knowledge by, <span class="highlight">studying back-end development</span> with the goal of becoming a <span class="highlight">full-stack developer</span>. I'm excited to learn about back-end technologies and how they integrate with the front-end to create complete web applications.
+        </p><br>
+        <br>
+        <p>
+            As a student,  <span class="highlight"> I'm focused on building a solid foundation in both front-end and back-end development</span>, and I'm eager to continue growing my skills. 
+        </p>
+
+    </div>
+    <h1 >Favorite</h1>
+    <div class="mother-box">
+        <div class="box">
+                <h4>Art</h1>
+               <ul>
+                <li>Poster Making</li>
+                <li>Drawing</li>
+                <li>Sketch</li>
+                <li>Writing</li>
+
+               </ul>
+        </div>
+        <div class="box">
+            <h4>Online Games</h4>
+               <ul>
+                <li>Mobile Legend</li>
+                <li>Clash of Clans</li>
+                <li>Call of Duty</li>
+                <li>PUBG</li>
+               </ul>
+        </div>
+        <div class="box">
+            <h4>Reading</h4>
+           <ul>
+            <li>Fantacy</li>
+            <li>Romancee</li>
+            <li>Horror</li>
+            <li>Action</li>
+           </ul>
+        </div>
+    </div>
+    <h1 >Contact Me!</h1>
+    <div class="icon">
+        <i class="fa-solid fa-envelope"><span class="highlight"> <label>LloydDump@gmail.com</label></span></i><br>
+    <i class="fa-solid fa-phone"><span class="highlight"> <label>+63 910 717 5609</label></i></span>
+    </div>
+    
+   
+<div class="footer">
+    <center><h5>© 2024 BrainBooster. All Rights Reserved .
+    </h5></center>
+</div>
+</div>
+
+    <script>
+        // Get elements
+        const closeModalBtn = document.getElementById("closeModalBtn");
+        const modal = document.getElementById("myModal");
+
+        // Open modal automatically when the page loads
+        window.onload = function() {
+            modal.style.display = "block";
+        }
+
+        // Close modal when "X" is clicked
+        closeModalBtn.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+
+        // Close modal if clicked outside of the modal content
+        window.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>

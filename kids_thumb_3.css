@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+label{
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-right: 20px;
+    padding-left: 5px;
+    font-weight: lighter;
+}
+
+.Header{
+
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: #4ca102b1;
+    border-radius: 20px 20px 0px 0px;
+    padding-right: 170px;
+    padding-left: 50px;
+    margin-top: 5px;
+}
+img.Logo{
+    width: 30%;
+    height: 90px;
+    padding-top: 10px;
+    margin-left: 50px;
+}
+.mother{
+    margin: 0px 12%;
+}
+.fa-house{
+    font-size: 20px;
+    color:black;
+    padding: 10px 20px;
+    margin-left: 30px;
+    padding-left: 80px;
+}
+.fa-shop{
+    font-size: 20px;
+    color:black;
+    padding: 10px 20px;
+    
+}
+.Link{
+    text-decoration: none;
+}
+
+.fa-cart-plus{
+    font-size: 20px;
+    color:tomato;
+    padding-top: 10px;
+    margin-left: 30px;
+    
+}
+.fa-address-card{
+    font-size: 20px;
+    color:black;
+    padding: 10px 20px;
+}
+
+
+input{
+    padding: 10px;
+    width: 60%;
+    height: 40px;
+    margin: 20px 0px ;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+span.magnify{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    margin-left: 56%;
+    font-size: 25px;
+    color: rgba(221, 43, 12, 0.719);
+    padding-top: 40px;
+}
+input.search{
+    font-size: 15px;
+    font-family:sans-serif;
+    color: gray;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px ;
+    margin-left: 30px;
+}
+.Menu {
+    background-color: #bbf989;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    
+}
+.Menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.Menu i {
+    margin-right: 8px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #e4fbd2;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown_menu {
+    display: block;
+}
+
+.dropdown_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown_menu ul li {
+    padding: 10px 20px;
+}
+
+.dropdown_menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    display: block;
+}
+
+.dropdown_menu ul li a:hover {
+    background-color: #4ca102b1;
+    color: white;}
+    h2{
+        padding-left: 10px;
+        font-weight: bolder;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    img.chld{
+        height: 30px;
+        width: 30px;
+       
+    }
+    h5{
+        display: flex;
+        justify-content: center;
+    }
+  
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    margin: 20px 0px;
+    padding: 4% 10%;
+}
+
+.image-box {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 5px 5px 15px rgb(59, 58, 58);
+    margin-left: 10px;
+}
+
+
+.large-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    padding-right: 40%;
+}
+
+.thumbnail img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.1);
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+
+#img1:checked ~ .image-box .img1,
+#img2:checked ~ .image-box .img2,
+#img3:checked ~ .image-box .img3,
+#img4:checked ~ .image-box .img4,
+#img5:checked ~ .image-box .img5 {
+    display: block;
+}
+
+
+#img1:checked ~ .thumbnails label[for="img1"] img,
+#img2:checked ~ .thumbnails label[for="img2"] img,
+#img3:checked ~ .thumbnails label[for="img3"] img,
+#img4:checked ~ .thumbnails label[for="img4"] img,
+#img5:checked ~ .thumbnails label[for="img5"] img {
+    border-color: tomato;}
+
+    .body{
+    
+        background:white;
+        box-shadow: 5px 5px 15px rgb(59, 58, 58);
+        border-radius: 10px;
+        max-width: 1150px;
+        height: 500px;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    .pname{
+        font-family: Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-weight: 50px;
+        padding-left: 10px;
+        padding-top: 30px;
+        position: absolute;
+        margin-left: 27%;
+        
+        }
+        .rating{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            padding-top: 5%;
+            margin-left: 31%;
+            color: orange;
+            }        
+            .rtm{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+                text-decoration: underline;
+                font-size: 18px;
+                position: absolute;
+                padding-left: 37%;
+                padding-top: 5%;
+                }
+                .rtg{
+                    position: absolute;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: lighter;
+                    text-decoration: underline;
+                    font-size: 18px;
+                    margin-right: 10px;
+                    margin-top: 5%;
+                    margin-left: 28%;
+            
+                    }
+                    .rate{
+                  position: absolute;
+                  position: absolute,Arial, Helvetica, sans-serif;
+                  font-weight: lighter;
+                  margin-left: 10%;
+                  font-size: 18px;
+                  color: rgba(167, 167, 167, 0.838);
+                  padding-top: 5% ;
+                margin-left: 46%;
+                        }
+                span{
+                    margin: 0px 40px;
+                    color: rgba(95, 94, 94, 0.838);
+                    }
+                    .peso{
+                        position: absolute;
+                        font-size: 30px;
+                        color: tomato;
+                        margin-top: 8%;
+                        margin-left: 28%;
+                        
+                        }
+                        span.ps{
+                            font-size: 40px;
+                            color: tomato;
+                            
+                            }
+                            .ml{
+                                font-size: 20px;
+                                position: absolute;
+                                margin-left: 40%;
+                                margin-top: 20%;
+                                margin-bottom: 26%;
+                                
+                                }
+                                h6{
+
+                                    padding: 14px 12px;
+                                    border: solid tomato 2px;
+                                    color: tomato;
+                                    border-radius: 5px;
+                                    }
+                                    .des{
+                                        position: absolute;
+                                        width: 450px;
+                                        margin-top: 13%;
+                                        margin-left: 27%;
+                                        text-align: justify;
+                                        font-family: sans-serif;
+                                        font-size: 20px;
+                                        }
+                                    .qlty{
+                                        display: flex;
+                                        flex-direction: row;
+                                        font-size: 20px;
+                                        margin-left: 25%;
+                                        position: absolute;
+                                        padding-top: 19%;
+                                    }
+                                    h4{
+                                        margin-top: 16%;
+                                        margin-left: 40px;
+                                    
+                                    }
+                                    input.int{
+                                        margin-left: 5%;
+                                        padding: 10px;
+                                        width: 70px;
+                                        border: solid tomato 2px;
+                                        text-align: center;
+                                        
+                                    }
+                                    .button:hover{
+                                        background-color: bisque;
+                                        cursor: pointer;
+                                    }
+                                    .int:hover{
+                                        background-color: bisque;
+                                        cursor: pointer;
+                                    }
+                                    .ml:hover{
+                                        background-color: bisque;
+                                        cursor: pointer;
+                                    }
+                                    .tml:hover{
+                                        background-color: bisque;
+                                        border: solid rgb(249, 108, 83) 1px;
+                                        color: tomato;
+                                        cursor: pointer;
+                                    }
+                                    .button{
+                                        position: absolute;
+                                        margin-left: 27%;
+                                        margin-top:25% ;
+                                        border: solid tomato 2px;
+                                        display: flex;
+                                        justify-content: center;
+                                        padding-bottom: 10px;
+                                        padding-left: 15px;
+                                        padding-right: 15px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                    label.cart{
+                                        font-weight: bold;
+                                        
+                                    }
+                                 
+                                    .lmt{
+                                        font-size: 20px;
+                                        position: absolute;
+                                        display: flex;
+                                        flex-direction: column; 
+                                        margin-left: 44%;
+                                        margin-top:25% ;
+                                        position: absolute;
+                                        border: solid tomato 2px;
+                                        display: flex;
+                                        justify-content: center;
+                                        }
+                                        label.tml{
+                                            padding: 10px 50px;
+                                            border: solid tomato 2px;
+                                            background-color: tomato;
+                                            font-family: sans-serif;
+                                            font-weight:bold ;
+                                            color: #fff;
+                                            }
+                                        .arrow{
+                                            display: flex;
+                                            justify-content: center;
+                                            position: absolute;
+                                            margin-left: 3%;
+                                            margin-top: 3%;
+                                            font-size: 30px;
+                                            color: tomato;
+                                           
+                                        }
+                                        .fa-arrow-left{
+                                            color: tomato;
+                                        }
+                                        .fa-circle-user label{
+                                            font-size: 20px;
+                                        }
+                                        .fa-circle-user:hover{
+                                            color: black;
+                                        }
+                                        .footer {
+                                            margin-top: 10px;
+                                            text-align: center;
+                                            padding: 10px 0;
+                                            background-color: #f4f7f6;
+                                            border-top: 1px solid #ddd;
+                                        }
